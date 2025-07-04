@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects - Kuldeep</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        animation: {
+          bubble: "bubble 2.5s ease-in-out infinite",
+        },
+        keyframes: {
+          bubble: {
+            "0%, 100%": { transform: "translateY(0px)" },
+            "50%": { transform: "translateY(-10px)" }
+          }
+        }
+      }
+    }
+  }
+</script>
+
+</head>
+<body class="bg-gray-900 text-white">
+  <nav class="bg-gray-800 p-4 flex justify-center gap-6 fixed w-full top-0 z-50">
+    <a href="index.html" class="hover:text-indigo-400">Home</a>
+    <a href="skills.html" class="hover:text-indigo-400">Skills</a>
+    <a href="projects.html" class="hover:text-indigo-400">Projects</a>
+    <a href="contact.html" class="hover:text-indigo-400">Contact</a>
+  </nav>
+
+  <section class="p-10 pt-24">
+  <h2 class="text-3xl font-bold mb-6 text-center">My Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- Project 1: AI Recipe Generator (MERN) -->
+   <<!-- Project 1: AI Recipe Generator (MERN) -->
+<div class="bg-gray-800 p-6 rounded shadow hover:scale-105 transition">
+  <!-- Animated MERN Logos -->
+  <div class="flex justify-center items-center gap-4 mb-4">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="w-12 animate-bubble" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" class="w-12 bg-white p-1 rounded animate-bubble" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 animate-bubble" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-12 animate-bubble" />
+  </div>
+  <h3 class="text-xl font-bold mb-2">AI Recipe Generator (MERN)</h3>
+  <p class="text-gray-300">
+    An AI-powered recipe tool that suggests meals based on user input using MongoDB, Express.js, React, and Node.js.
+  </p>
+</div>
+
+
+    <!-- Project 2: Data Annotation with CVAT -->
+    <div class="bg-gray-800 p-6 rounded shadow hover:scale-105 transition">
+      <div class="flex items-center gap-4 mb-4">
+       
+      </div>
+      <h3 class="text-xl font-bold mb-2">Data Annotation using CVAT</h3>
+      <p class="text-gray-300">Annotated image and video datasets using CVAT for training ML models — including bounding boxes, segmentation, and labels.</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

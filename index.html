@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kuldeep's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/nav.js" defer></script>
+  <style>
+  .circle-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    animation: spin 20s linear infinite;
+  }
+
+  .circle-container img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+
+  .pos-1 { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+  .pos-2 { top: 25%; left: 90%; transform: translate(-50%, -50%); }
+  .pos-3 { top: 75%; left: 90%; transform: translate(-50%, -50%); }
+  .pos-4 { top: 100%; left: 50%; transform: translate(-50%, -50%); }
+  .pos-5 { top: 75%; left: 10%; transform: translate(-50%, -50%); }
+  .pos-6 { top: 25%; left: 10%; transform: translate(-50%, -50%); }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+
+
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 p-4 flex justify-center gap-6 fixed w-full top-0 z-50">
+    <a href="index.html" class="hover:text-indigo-400">Home</a>
+    <a href="skills.html" class="hover:text-indigo-400">Skills</a>
+    <a href="projects.html" class="hover:text-indigo-400">Projects</a>
+    <a href="contact.html" class="hover:text-indigo-400">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white pt-16 text-center">
+
+  <!-- Rotating Circle of Logos -->
+  <div class="circle-container mb-8">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="pos-1" alt="HTML" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="pos-2" alt="CSS" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="pos-3" alt="JavaScript" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="pos-4" alt="React" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="pos-5" alt="Java" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="pos-6" alt="MySQL" />
+  </div>
+
+  <!-- Intro Text -->
+  <h1 class="text-4xl font-bold mb-2">Hi, I'm <span class="text-indigo-400">Kuldeep</span></h1>
+  <p class="text-lg text-gray-300">Web Developer, & Intern at Deepsurg AI, Data annotation</p>
+</section>
+
+</body>
+</html>
