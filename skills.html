@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Skills - Kuldeep</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 text-white">
-  <nav class="bg-gray-800 p-4 flex justify-center gap-6 fixed w-full top-0 z-50">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Skills | Kuldeep</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center pt-16">
+     <nav class="bg-gray-800 p-4 flex justify-center gap-6 fixed w-full top-0 z-50">
     <a href="index.html" class="hover:text-indigo-400">Home</a>
     <a href="skills.html" class="hover:text-indigo-400">Skills</a>
     <a href="projects.html" class="hover:text-indigo-400">Projects</a>
     <a href="contact.html" class="hover:text-indigo-400">Contact</a>
   </nav>
 
-  <section class="p-10 pt-24">
-    <h2 class="text-3xl font-bold mb-6 text-center">My Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-      <!-- Skill Cards -->
-      <!-- Inside your Skills section -->
-<div class="bg-gray-800 p-4 rounded hover:scale-105 transition">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-12 mx-auto mb-2">
-  <p>HTML</p>
-</div>
+    <h1 class="text-3xl font-bold text-indigo-400 mb-10">My Skills</h1>
 
-<div class="bg-gray-800 p-4 rounded hover:scale-105 transition">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-12 mx-auto mb-2">
-  <p>CSS</p>
-</div>
+    <!-- 🔹 Technologies Sec -->
+    <h2 class="text-2xl font-semibold mb-4">Technologies</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mb-12">
 
-<div class="bg-gray-800 p-4 rounded hover:scale-105 transition">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 mx-auto mb-2">
-  <p>JavaScript</p>
-</div>
+      <!-- HTML -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-16 h-16 mb-2" alt="HTML">
+        <span class="text-sm font-semibold">HTML</span>
+      </a>
 
-<div class="bg-gray-800 p-4 rounded hover:scale-105 transition">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="w-12 mx-auto mb-2">
-  <p>React</p>
-</div>
+      <!-- CSS -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-16 h-16 mb-2" alt="CSS">
+        <span class="text-sm font-semibold">CSS</span>
+      </a>
 
-<div class="bg-gray-800 p-4 rounded hover:scale-105 transition">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-12 mx-auto mb-2">
-  <p>Java</p>
-</div>
+      <!-- JS -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-16 h-16 mb-2" alt="JS">
+        <span class="text-sm font-semibold">JavaScript</span>
+      </a>
 
-<div class="bg-gray-800 p-4 rounded hover:scale-105 transition">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-12 mx-auto mb-2">
-  <p>MySQL</p>
-</div>
+      <!-- React -->
+      <a href="https://reactjs.org" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-16 h-16 mb-2" alt="React">
+        <span class="text-sm font-semibold">React</span>
+      </a>
+
+      <!-- Java -->
+      <a href="https://www.oracle.com/java/" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-16 h-16 mb-2" alt="Java">
+        <span class="text-sm font-semibold">Java</span>
+      </a>
+
+      <!-- MySQL -->
+      <a href="https://www.mysql.com/" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-16 h-16 mb-2" alt="MySQL">
+        <span class="text-sm font-semibold">MySQL</span>
+      </a>
+    </div>
+
+    <!-- 🔧 Tools Section -->
+    <h2 class="text-2xl font-semibold mb-4">Tools</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl">
+
+      <!-- GitHub -->
+      <a href="https://github.com/" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-16 h-16 mb-2 invert" alt="GitHub">
+        <span class="text-sm font-semibold">GitHub</span>
+      </a>
+
+      <!-- VS Code -->
+      <a href="https://code.visualstudio.com/" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-16 h-16 mb-2" alt="VS Code">
+        <span class="text-sm font-semibold">VS Code</span>
+      </a>
+
+      <!-- Google Workspace -->
+      <a href="https://workspace.google.com/" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+        <img src="https://www.gstatic.com/images/branding/product/2x/workspace_64dp.png" class="w-16 h-16 mb-2" alt="Google Workspace">
+        <span class="text-sm font-semibold">Google Workspace</span>
+      </a>
+
+            <!-- ✅ CVAT -->
+<a href="https://cvat.ai" target="_blank" class="bg-gray-800 hover:bg-indigo-700 transition p-6 rounded-xl flex flex-col items-center">
+  <img src="cvat.png" class="w-16 h-16 mb-2" alt="CVAT">
+  <span class="text-sm font-semibold">CVAT</span>
+</a>
 
     </div>
-  </section>
-</body>
+
+  </body>
 </html>
